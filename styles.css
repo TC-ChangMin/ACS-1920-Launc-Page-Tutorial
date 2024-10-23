@@ -1,5 +1,5 @@
 body {
-    color: red;
+    color: grey;
 }
 .navbar {
     padding: 1rem;
@@ -9,24 +9,24 @@ body {
 
 .hero-background-img {
     position: relative;
-
     background: rgba(0, 0, 0, 0.3); /* If our image is bright, we can tone it down with this darker overlay */
     padding-top:200px;  
     padding-bottom:200px;
 }
   
-.hero-background-img:after {
+.hero-background-img::after {
     content: "";
     position: absolute;
-    background-image: url("file-name.jpg");
+    background-color: red;
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20230612/pngtree-man-on-a-mountain-starry-sky-wallpaper-for-mobile-image_2936450.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    max-height: 600px;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: -1;
-    opacity: 0.5; /* Tone the image down further by giving it transparency */
+    opacity: 0.3; /* Tone the image down further by giving it transparency */
 }
   
